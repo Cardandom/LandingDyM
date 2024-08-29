@@ -14,14 +14,16 @@ const sora = Sora({
 import Nav from "../components/Nav";
 import Header from "../components/Header";
 import TopLeftImg from "../components/TopLeftImg"
+import CardLeft from "../components/CardLeft"
 
 const Layout = ({ children }) => {
   return (
     <div className={`page bg-primary text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative`}>
-      <TopLeftImg/>
+      {/* <TopLeftImg/> */}
       <Nav />
       <Header />
         {children}
+      <CardLeft/>
     </div>
   );
 };
